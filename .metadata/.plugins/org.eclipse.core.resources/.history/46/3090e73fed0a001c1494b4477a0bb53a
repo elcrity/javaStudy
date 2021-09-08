@@ -1,0 +1,12 @@
+package object;
+
+public class StudentOTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package object;
+
+public class ObjdetCloneTest {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package classex;
+
+public class NewInstanceTest {
+	public static void main(String[] args) throws ClassNotFoundException, 
+	InstantiationException, IllegalAccessException{
+		Person person1 = new Person();
+		System.out.println(person1);
+		
+		Class pClass = class.forName("classex.Person");
+	}
+
+}
