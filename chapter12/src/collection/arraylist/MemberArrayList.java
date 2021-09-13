@@ -10,9 +10,10 @@ public class MemberArrayList {
 		arrayList = new ArrayList<Member>();
 	}
 	
-	public MemberArrayList(Member member) {
+	public void addMember(Member member) {
 		arrayList.add(member);
 	}
+
 	public boolean removeMember(int memberId) {
 		for(int i = 0; i < arrayList.size();i++) {
 			Member member = arrayList.get(i);
@@ -25,11 +26,15 @@ public class MemberArrayList {
 		System.out.println(memberId + "가 존재하지 않습니다");
 		return false;
 	}
+	
+	public void instertMember(Member member, int index) {
+		arrayList.add(index, member);
+	}
+	
 	public void showAllMember() {
 		for(Member member : arrayList) {
 			System.out.println(member);
 		}
 		System.out.println();
 	}
-
 }
