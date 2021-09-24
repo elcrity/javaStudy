@@ -6,9 +6,9 @@ public class MemberHashMapTest {
 	public static void main(String[] args) {
 			MemberHashMap memberHashMap = new MemberHashMap();
 			
-			Member lee = new Member(1001,"이");
-			Member son = new Member(1002,"손");
-			Member park = new Member(1003,"박");
+			Member lee = new Member(1003,"이");
+			Member son = new Member(1001,"손");
+			Member park = new Member(1002,"박");
 			Member hong = new Member(1004,"홍");
 			
 			memberHashMap.addMember(lee);
