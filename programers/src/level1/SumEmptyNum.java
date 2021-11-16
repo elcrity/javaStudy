@@ -1,6 +1,6 @@
 package level1;
 
-public class SumEmptyNum {//¾ø´Â ¼ıÀÚ ´õÇÏ±â
+public class SumEmptyNum {//ì—†ëŠ” ìˆ«ì ë”í•˜ê¸°
 
 	public static void main(String[] args) {
 		    	int[][] numbers = {{1,2,3,4,6,7,8,0},{5,8,4,0,6,7,9}};
