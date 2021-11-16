@@ -7,4 +7,6 @@
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="innerclass.OutClass.InStaticClass"/>
+    <fullyQualifiedTypeName name="lamda.StringConCatImpl"/>
 </qualifiedTypeNameHistroy>
