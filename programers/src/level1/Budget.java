@@ -1,7 +1,7 @@
 package level1;
 import java.util.Arrays;
 
-public class Budget {//¿¹»ê
+public class Budget {//ì˜ˆì‚°
 
 	public static void main(String[] args) {
 		int[] d1 = {1,3,2,5,4};

@@ -2,7 +2,7 @@ package level1;
 
 import java.lang.*;
 
-public class NumStringAlphabet {//¼ıÀÚ ¹®ÀÚ¿­°ú ¿µ´Ü¾î
+public class NumStringAlphabet {//ìˆ«ì ë¬¸ìì—´ê³¼ ì˜ë‹¨ì–´
 	public static void main(String[] args) {
 	        int answer = 0;
 	        String[] s = {"one4seveneight","23four5six7","2three45sixseven","123"};
