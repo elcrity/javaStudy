@@ -5,6 +5,8 @@ import java.util.*;
 class FindNotFinish_Hash {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
+        
+        // ===해시 미사용=== : 시간 초과로 실패, 속도 느림
         // List<String> temp = new ArrayList<String>(Arrays.asList(participant));
         // System.out.println(temp);
         // for(int i = 0; i<completion.length; i++){
@@ -12,6 +14,8 @@ class FindNotFinish_Hash {
         // }
         // answer = String.join(",",temp);
         
+        
+        // ===해시 사용===
         HashMap<String, Integer> map = new HashMap<>();//각각 키는 String, 밸류는 Integer의 map해쉬맵 생성
         for(String player : participant){
             map.put(player, map.getOrDefault(player,0)+1);
