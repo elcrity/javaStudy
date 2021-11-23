@@ -26,6 +26,8 @@ import java.util.Arrays;
 //                set.add(numbers[i] + numbers[j]);
 //            }
 //        }
+//			List setList = new ArrayList(set);
+//			Collection.sort(setList);//리스트로 변환후 정렬
 //        return set;
 //	}
 //}
