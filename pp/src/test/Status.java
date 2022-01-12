@@ -3,20 +3,32 @@ package test;
 import java.io.Serializable;
 
 public class Status implements Serializable{
-	private static int lv;
+	private int lv;
 	private String name;
-	private static int hp;
-	private static int mp;
-	private static int maxHp;
-	private static int maxMp;
-	private static String job;
-	private static int exp;
-	private static int atk;
-	private static int def;
-	private static int hit;
-	private static int ac;
+	private int hp;
+	private int mp;
+	private int maxHp;
+	private int maxMp;
+	private String job;
+	private int exp;
+	private int atk;
+	private int def;
+	private int hit;
+	private int ac;
 	
+	private static Status instance = new Status();
 	Status(){}
+	
+	public static Status getInstance() {
+		if(instance == null) {
+			instance = new Status();
+		}
+		return instance;
+	}
+	
+	public static void setInstance(Status status) {
+		instance = status;
+	}
 	
 //	Status(int lv, String name, int maxHp, int maxMp) {
 //		this.lv = lv;
@@ -47,78 +59,79 @@ public class Status implements Serializable{
 		System.out.println("  ¸¶³ª : " + this.getMp()+ "/" +  this.getMaxMp());
 		System.out.println("Atk : " + this.getAtk() + "  Def : " + this.getDef());
 		System.out.println("Hit : " + this.getHit() + "  AC : " + this.getAc());
+		System.out.println();
 	}
 	
 	public Status getStatus(Status stat) {
 		return stat;
 	}
 
-	public static int getHit() {
+	public int getHit() {
 		return hit;
 	}
 
-	public static void setHit(int hit) {
-		Status.hit = hit;
+	public void setHit(int hit) {
+		this.hit = hit;
 	}
 
-	public static int getAc() {
+	public int getAc() {
 		return ac;
 	}
 
-	public static void setAc(int ac) {
-		Status.ac = ac;
+	public void setAc(int ac) {
+		this.ac = ac;
 	}
 
-	public static int getExp() {
+	public int getExp() {
 		return exp;
 	}
 
-	public static void setExp(int exp) {
-		Status.exp = exp;
+	public void setExp(int exp) {
+		this.exp = exp;
 	}
 
-	public static int getAtk() {
+	public int getAtk() {
 		return atk;
 	}
 
-	public static void setAtk(int atk) {
-		Status.atk = atk;
+	public void setAtk(int atk) {
+		this.atk = atk;
 	}
 
-	public static int getDef() {
-		return def;
+	public int getDef() {
+		return def+Dice.RollDice(20);
 	}
 
-	public static void setDef(int def) {
-		Status.def = def;
+	public void setDef(int def) {
+		this.def = def;
 	}
 
-	public static String getJob() {
+	public String getJob() {
 		return job;
 	}
 
-	public static void setJob(String job) {
-		Status.job = job;
+	public void setJob(String job) {
+		this.job = job;
 	}
 
-	public static void setLv(int lv) {
-		Status.lv = lv;
+	public void setLv(int lv) {
+		this.lv = lv;
 	}
 
-	public static void setHp(int hp) {
-		Status.hp = hp;
+	public void setHp(int hp) {
+		this.hp = hp;
 	}
 
-	public static void setMp(int mp) {
-		Status.mp = mp;
+	public void setMp(int mp) {
+		this.mp = mp;
 	}
 
-	public static void setMaxHp(int maxHp) {
-		Status.maxHp = maxHp;
+	public void setMaxHp(int maxHp) {
+		this.maxHp = maxHp;
 	}
 
-	public static void setMaxMp(int maxMp) {
-		Status.maxMp = maxMp;
+	public void setMaxMp(int maxMp) {
+		this.maxMp = maxMp;
 	}
 
 	public int getLv() {

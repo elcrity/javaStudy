@@ -43,7 +43,7 @@ public class SaveloadTest {
 		
 		Object one = os.readObject();
 		
-		Status cha = (Status)one;
+		Status cha = Status.getInstance();
 		System.out.println("불러오기");
 		System.out.println(cha.getLv());
 		System.out.println(cha.getName());
